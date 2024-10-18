@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Tuo Negozio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sami & Batta Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#prodotti">Prodotti</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+                <li class="carrello" onclick="toggleCarrello()">🛒 <span id="carrello-count"></span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="carrello-popup" class="carrello-popup">
+        <ul id="prodotti-carrello"></ul>
+        <button onclick="chiudiCarrello()">Chiudi</button>
+        <span id="carrello-quantita" class="carrello-quantita"></span>
+    </div>
+
+    <main>
+        <section id="home" class="hero">
+            <h2>Scopri i Nostri Prodotti Esclusivi!</h2>
+            <p>Un viaggio nel lusso e nella qualità.</p>
+        </section>
+
+        <section id="prodotti">
+            <h2>I Nostri Prodotti</h2>
+            <div class="prodotto">
+                <h3>Kit di Pulizia per Scarpe</h3>
+                <img src="C:\Users\ismai\Downloads\image (1).png" alt="Kit di pulizia per scarpe">
+                <p>Per mantenere le tue scarpe sempre brillanti!</p>
+                <p class="prezzo">Prezzo: €9,99</p>
+                <button onclick="aggiungiAlCarrello('Kit di Pulizia per Scarpe', '€9,99')">Aggiungi al Carrello</button>
+            </div>
+            <div class="prodotto">
+                <h3>Pellicola iPhone Privacy</h3>
+                <img src="C:\Users\ismai\Downloads\download (2).jpeg" alt="Pellicola iPhone Privacy">
+                <p>Vetro temperato di ottima qualità, fino a 30 gardi di Privacy.</p>
+                <p class="prezzo">Prezzo: €4,99</p>
+                <button onclick="aggiungiAlCarrello('Pellicola Privacy', '€4,99')">Aggiungi al Carrello</button>
+            </div>
+            <div class="prodotto">
+                <h3>Orologio digitale 3D</h3>
+                <img src="C:\Users\ismai\Downloads\download (3).jpeg" alt="Orologio digitale 3D">
+                <p>Orologio 3D, alimentazione con cavo, luminosità notturna automatica, fa anche da sveglia, calendario e termometro</p>
+                <p class="prezzo">Prezzo: €14,99</p>
+                <button onclick="aggiungiAlCarrello('Orologio digitale 3D', '€14,99')">Aggiungi al Carrello</button>
+            </div>
+            <!-- Aggiungi altri prodotti qui -->
+
+        </section>
+
+        <section id="contatti">
+            <h2>Contattaci</h2>
+            <p>Email: hamadarhazouani1@gmail.com</p>
+            <p>Telefono: 351-785-6934</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 by Sami & Batta. Qui per voi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
